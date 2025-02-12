@@ -102,6 +102,15 @@ main {
 }
 
 /*Section 1 Header*/
+header-bar {
+    display: flex;
+    align-items: flex-start;
+    background: 2px lime;
+}
+
+.title-bar {
+
+}
 
 
 
