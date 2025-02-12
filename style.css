@@ -19,10 +19,37 @@ section {
 
 }
 
+logo-words {
+    display: block;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+
 /* Sticky footer from flex-direction:column;
 min-height 100vh and main flex-grow:1  
 Phillip Walton- Sticky FOoters
 */
+
+/*mapping outline for personal view*/
+
+body * {
+    border: 2px solid seagreen;
+    padding: 2px
+}
+
+/* Styles in body*/
 
 body {
     display: flex;
@@ -42,18 +69,27 @@ inner-column {
     padding: 10px;
 }
 
-graphic-content {
+logo-words {
     display: block;
+    border: 3px solid slateblue;
 }
 
-img {
+logo-words graphic-content  {
     display: block;
-    width: 100%;
-    height: auto;
+
 }
 
+logo-words text-content {
 
 
+}
+
+@media (min-width: 700px) {
+        logo-words {
+            display:flex;
+            flex-direction:row-reverse;
+        }
+}
 
 
 
