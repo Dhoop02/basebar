@@ -75,19 +75,33 @@ logo-words {
 }
 
 logo-words graphic-content  {
-    display: block;
+
 
 }
 
 logo-words text-content {
+    display: block;
 
 
 }
+
+
+/* Media is targeting logo-words and telling it to
+display flex which puts graphic and text into a row
+reversed the direction to have text on left and img on right
+put a gap of 20px to not smash it.*/
 
 @media (min-width: 700px) {
         logo-words {
             display:flex;
             flex-direction:row-reverse;
+            gap: 20px;
+        }
+        logo-words :is(text-content, graphic-content){
+            flex-basis: 50%;
+            border: 1px solid blue;
+            
+
         }
 }
 
