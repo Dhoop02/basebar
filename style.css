@@ -42,10 +42,14 @@ p a, li a {
 /*Page Flow Settings*/
 
 html {
-    --color: #59c4ca;
-    --black: #333;
+    --blue: #59c4ca;
+    --black: #000000;
     --white: #efefee;
-    --light: #fd191e;
+    --red: #fd191e;
+    --yellow: #ffd60a;
+    --gray: #48494b;
+
+
 }
 
 .title-font {
@@ -65,8 +69,8 @@ html {
 
 .button {
     display: inline-block;
-    background-color: #59c4ca;
-    color: rgb(255, 253, 253);
+    background-color: var(--blue);
+    color: white;
     font-size: 1.2rem;
     padding: .6em 1em;
     border-radius: 6px; /*rounding edges*/
@@ -116,6 +120,9 @@ inner-column {
 
 logo-words {
     display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     border: 3px solid slateblue;
 }
 
@@ -126,9 +133,21 @@ logo-words graphic-content  {
 
 logo-words text-content {
     display: block;
-
-
 }
+
+/*Targeted logo-words text-content p 
+logo-words text-content .button 
+for specific margin between the items*/
+
+logo-words text-content p {
+    margin-top: 10px;
+}
+
+logo-words text-content .button {
+    margin-top: 10px;
+}
+
+
 
 
 /* @Media is targeting logo-words and telling it to
@@ -138,9 +157,7 @@ put a gap of 20px to not smash it.*/
 
 @media (min-width: 700px) {
         logo-words {
-            display:flex;
             flex-direction:row-reverse;
-            gap: 20px;
         }
         logo-words :is(text-content, graphic-content){
             flex-basis: 50%;
@@ -150,7 +167,11 @@ put a gap of 20px to not smash it.*/
         }
 }
 
-
+.welcome {
+    background-color: var(--gray);
+    opacity: .8;
+    color: var(--blue);
+}
 
 
 footer {
