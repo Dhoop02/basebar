@@ -1,6 +1,6 @@
 /*Pre-Setup*/
 * {
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-family:fantasy
 box-sizing: border-box;
 
 }
@@ -11,6 +11,12 @@ box-sizing: border-box;
 header, main{
 
 
+}
+
+header {
+
+    background-color: var(--blue);
+    color: var(--black);
 }
 
 section {
@@ -104,11 +110,19 @@ main {
 /*Section 1 Header*/
 header-bar {
     display: flex;
-    align-items: flex-start;
-    background: 2px lime;
+    justify-content: space-between;
+    padding: 5px;
+   
+
+    
 }
 
-.title-bar {
+title-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:5px;
+    padding: 5px;
 
 }
 
